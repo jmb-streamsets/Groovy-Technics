@@ -11,7 +11,8 @@ This repository is dedicated to Groovy (Java) programming Technics that can be u
 - Feature 2 : How to implement a "branch table"
     - This feature will demonstrate how to use the concept of "branch table" to optimize and organize code structures
 - Feature 3 : How to read & execute PGP encrypted groovy code
-  - 
+    - This feature will implement a logic that will be able to read PGP encrypted groovy / Java code then compile and
+      execute it
 
 ## StreamSets pipeline will be used to demo all the above features
 
