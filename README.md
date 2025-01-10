@@ -9,7 +9,13 @@ This repository is dedicated to Groovy (Java) programming Technics that can be u
 
 ## A StreamSets pipeline will be used to demo all the above features.
 
-## Basic groovy scripts will also be provided for IDE base experiments
+## Basic groovy scripts will also be provided for IDE basic experiments
 
-## --- ---
+## GPG helper
+
+gpg --export --armor "4C1CB37692A54837" > pubkey.asc
+
+gpg --export-secret-keys --armor "4C1CB37692A54837" > prvkey.asc
+
+gpg --output pgp/secretGroovyCode.pgp --encrypt --recipient "4C1CB37692A54837" src/secretGroovyCode.groovy
 
