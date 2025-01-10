@@ -20,6 +20,8 @@ This repository is dedicated to Groovy (Java) programming Technics that can be u
 
 ## GPG command line utility helper
 
+### Commands that can be used to create a PGP key (private & public components)
+
 ````shell
 gpg --full-generate-key
 
