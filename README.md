@@ -3,15 +3,15 @@ This repository is dedicated to Groovy (Java) programming Technics that can be u
 
 ## Features
 
-- Feature 1 : Implementing groovy code to create groovy code at runtime then compile and execute it.
-- Feature 2 : Implementing groovy code to create a branch table technic to organize and optimize the code structure.
-- Feature 3 : Implementing groovy code to read groovy code from a PGP encrypted text file then compile and execute it.
+- Feature 1 : Implementing groovy code to create groovy code at runtime then compile and execute it
+- Feature 2 : Implementing groovy code to create a branch table technic to organize and optimize the code structure
+- Feature 3 : Implementing groovy code to read groovy code from a PGP encrypted text file then compile and execute it
 
-## A StreamSets pipeline will be used to demo all the above features.
+## A StreamSets pipeline will be used to demo all the above features
 
 ## Basic groovy scripts will also be provided for IDE basic experiments
 
-## GPG helper
+## GPG command line utility helper
 
 gpg --full-generate-key
 
