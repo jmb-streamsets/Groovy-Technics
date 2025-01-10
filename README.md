@@ -13,9 +13,13 @@ This repository is dedicated to Groovy (Java) programming Technics that can be u
 
 ## GPG helper
 
-gpg --export --armor "4C1CB37692A54837" > pubkey.asc
+gpg --full-generate-key
 
-gpg --export-secret-keys --armor "4C1CB37692A54837" > prvkey.asc
+gpg --list-keys --with-colons | grep '^pub' | cut -d':' -f5
 
-gpg --output pgp/secretGroovyCode.pgp --encrypt --recipient "4C1CB37692A54837" src/secretGroovyCode.groovy
+gpg --export --armor "xxxxxxx" > pubkey.asc
+
+gpg --export-secret-keys --armor "xxxxxxx" > prvkey.asc
+
+gpg --output pgp/secretGroovyCode.pgp --encrypt --recipient "xxxxxxx" src/secretGroovyCode.groovy
 
