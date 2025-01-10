@@ -23,3 +23,8 @@ gpg --export-secret-keys --armor "xxxxxxx" > prvkey.asc
 
 gpg --output pgp/secretGroovyCode.pgp --encrypt --recipient "xxxxxxx" src/secretGroovyCode.groovy
 
+# Pipeline used for the demo
+
+## 3 different groovy evaluators will be used to demo each feature
+
+![Screenshot from 2025-01-10 15-05-20.png](images/Screenshot%20from%202025-01-10%2015-05-20.png)

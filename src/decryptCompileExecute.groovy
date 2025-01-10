@@ -5,22 +5,29 @@ import org.bouncycastle.openpgp.jcajce.JcaPGPObjectFactory
 import org.bouncycastle.openpgp.operator.jcajce.JcaKeyFingerprintCalculator
 import org.bouncycastle.openpgp.operator.jcajce.JcePBESecretKeyDecryptorBuilder
 import org.bouncycastle.openpgp.operator.jcajce.JcePublicKeyDataDecryptorFactoryBuilder
-import java.security.Security
-
 import org.codehaus.groovy.control.CompilerConfiguration
 import org.codehaus.groovy.control.customizers.ImportCustomizer
 
+import java.security.Security
 
 String pgpPassphrase = "groovy"
 String pgpKeyPath = "/home/jmb/IdeaProjects/Groovy-Technics/keys/prvkey.asc"
 def inputFilePath = "/home/jmb/IdeaProjects/Groovy-Technics/pgp/secretGroovyCode.pgp"
 
-
 def script = new StringBuilder()
 def config = new CompilerConfiguration()
-def customizer = new ImportCustomizer()
+config.recompileGroovySource = false
+config.debug = false
+config.setSourceEncoding("UTF-8")
+config.targetBytecode = "17.0"
+config.optimizationOptions
+config.verbose = false
+config.indyEnabled
+
+ImportCustomizer importCustomizer = new ImportCustomizer()
+importCustomizer.addStarImports("java.util")
+config.addCompilationCustomizers(importCustomizer)
 def binding = new Binding()
-config.addCompilationCustomizers(customizer)
 def shell = new GroovyShell(binding, config)
 
 
@@ -31,7 +38,6 @@ static PGPSecretKeyRingCollection readSecretKeyRingCollection(String privateKeyF
     keyIn.close()
     return secretKeyRingCollection
 }
-
 
 Security.addProvider(new BouncyCastleProvider())
 InputStream fileInputStream = new BufferedInputStream(new FileInputStream(inputFilePath))
@@ -73,7 +79,7 @@ if (message instanceof PGPLiteralData) {
     PGPLiteralData ld = (PGPLiteralData) message
     InputStream unc = ld.getInputStream()
     BufferedReader reader = new BufferedReader(new InputStreamReader(unc))
-    script.append(reader.lines().collect().join(";"))
+    script.append(reader.lines().collect().join())
 } else {
     throw new IllegalArgumentException("Unexpected PGP message type: " + message.getClass().getName())
 }
@@ -84,5 +90,6 @@ fileInputStream.close()
 //println script.toString()
 Script object = shell.parse(script.toString())
 object.run()
+
 
 System.exit(0)
