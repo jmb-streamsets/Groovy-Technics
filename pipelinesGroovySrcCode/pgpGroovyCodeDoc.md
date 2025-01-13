@@ -1,3 +1,5 @@
+# Explanation of the Groovy script
+
 # Explanation of the Groovy Init Script
 
 This Groovy script decrypts a PGP-encrypted file, extracts a script from it, compiles the script dynamically, and saves
@@ -137,4 +139,6 @@ This script is ideal for workflows where:
 - Encrypted scripts need to be dynamically decrypted, compiled, and executed.
 - Integration with platforms like **StreamSets Data Collector (SDC)** is required.
 
-[pgp_init_script.groovy](feature3/pgp_init_script.groovy)
+# - [pgp_init_script.groovy](feature3/pgp_init_script.groovy)
+
+# - [pgp_script.groovy](feature3/pgp_script.groovy)
