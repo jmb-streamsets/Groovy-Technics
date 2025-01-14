@@ -40,5 +40,8 @@ gpg --output pgp/secretGroovyCode.pgp --encrypt --recipient "xxxxxxx" src/secret
 
 ![Screenshot from 2025-01-10 15-05-20.png](images/Screenshot%20from%202025-01-10%2015-05-20.png)
 
-# Feature 3 documentation [pgpGroovyCodeDoc.md](pipelinesGroovySrcCode/pgpGroovyCodeDoc.md)
+# Feature 1 documentation
 
+# Feature 2 documentation
+
+# Feature 3 documentation [feature3.md](pipelinesGroovySrcCode/feature3/feature3.md)
