@@ -17,7 +17,7 @@ the same for both modes.
 
 ---
 
-# Pipeline used for the demo [secretGroovyCode.pgp](pgp/secretGroovyCode.pgp) [SDC 6.0.0]
+# Pipeline used for the demo [ssif_groovy_demo.zip](pipelines/ssif_groovy_demo.zip) [SDC 6.0.0]
 
 ![Screenshot from 2025-01-10 15-05-20.png](images/Screenshot%20from%202025-01-10%2015-05-20.png)
 
