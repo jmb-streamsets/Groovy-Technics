@@ -7,6 +7,15 @@ could use within a StreamSets pipeline and in any other environments that are
 Java & Groovy capable.
 
 ---
+
+- The general idea is to generate code and run it using a meta-data driven
+  approach.
+- Code can also be stored encrypted then decrypted, compiled and executed at
+  run-time.
+- Groovy and Java programming do offer many very advanced code construction and
+  this small project will visit the `Branch Table` pattern.
+
+---
 StreamSets Groovy evaluator are set to use Groovy 4.x and Record Type
 `Data Collector Records` this is required if one wants to have a very fine
 control when shaping an SDC record. A good example would be to set a field
