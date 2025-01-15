@@ -139,6 +139,6 @@ This script is ideal for workflows where:
 - Encrypted scripts need to be dynamically decrypted, compiled, and executed.
 - Integration with platforms like **StreamSets Data Collector (SDC)** is required.
 
-# - [pgp_init_script.groovy](pgp_init_script.groovy)
+# - [pgp_init_script.groovy](init_script.groovy)
 
-# - [pgp_script.groovy](pgp_script.groovy)
+# - [pgp_script.groovy](script.groovy)

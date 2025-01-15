@@ -1,7 +1,6 @@
 sdc.records.each { record ->
     try {
-        sdc.state['binding'].setVariable("record", record)
-        sdc.state['run'].run()
+        def status = sdc.state['executeBranch']("tab2", record)
         sdc.output.write(record)
     } catch (e) {
         sdc.log.error(e.toString(), e)

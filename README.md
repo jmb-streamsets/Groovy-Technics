@@ -3,8 +3,6 @@ This repository is dedicated to Groovy (Java) programming Technics that can be u
 
 ## This initial project will demonstrate few advanced Groovy technics that anybody could use within a StreamSets pipeline and in any other environments that are Java & Groovy capable.
 
-# Project goals
-
 ## Project Features
 
 - ## Feature 1 : Implementing groovy code to create groovy code
