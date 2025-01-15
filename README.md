@@ -3,6 +3,8 @@ This repository is dedicated to Groovy (Java) programming Technics that can be u
 
 ## This initial project will demonstrate few advanced Groovy technics that anybody could use within a StreamSets pipeline and in any other environments that are Java & Groovy capable.
 
+# Project goals
+
 ## Project Features
 
 - ## Feature 1 : Implementing groovy code to create groovy code
@@ -40,8 +42,8 @@ gpg --output pgp/secretGroovyCode.pgp --encrypt --recipient "xxxxxxx" src/secret
 
 ![Screenshot from 2025-01-10 15-05-20.png](images/Screenshot%20from%202025-01-10%2015-05-20.png)
 
-# Feature 1 documentation
+# Feature 1 documentation [feature1.md](pipelinesGroovySrcCode/feature1/feature1.md)
 
-# Feature 2 documentation
+# Feature 2 documentation [feature2.md](pipelinesGroovySrcCode/feature2/feature2.md)
 
 # Feature 3 documentation [feature3.md](pipelinesGroovySrcCode/feature3/feature3.md)
