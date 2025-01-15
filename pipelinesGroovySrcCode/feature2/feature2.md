@@ -1,3 +1,12 @@
+<!-- TOC -->
+
+* [Feature 2 logic](#feature-2-logic)
+  * [Init Script](#init-script)
+  * [Script](#script)
+  * [Destroy Script](#destroy-script)
+
+<!-- TOC -->
+
 # Feature 2 logic
 
 ## Init Script

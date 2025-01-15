@@ -17,7 +17,7 @@ the same for both modes.
 
 ---
 
-# Pipeline used for the demo
+# Pipeline used for the demo [secretGroovyCode.pgp](pgp/secretGroovyCode.pgp) [SDC 6.0.0]
 
 ![Screenshot from 2025-01-10 15-05-20.png](images/Screenshot%20from%202025-01-10%2015-05-20.png)
 
@@ -25,7 +25,7 @@ the same for both modes.
 
 # Project Features
 
-- ## Feature 1 : Implementing groovy code to create groovy code
+- ## Feature 1 : Implementing Groovy code to create groovy code
     - This feature will be used to demonstrate how at run-time to programmatically generate and compile groovy & java
       code
   - Feature 1
